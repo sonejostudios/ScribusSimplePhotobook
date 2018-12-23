@@ -1,0 +1,2 @@
+# ScribusSimplePhotobook
+ScribusSimplePhotobook
