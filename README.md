@@ -29,17 +29,17 @@ If you want everywhere the same borders, a good starting point
 is to set the same number for page frame size and image border size.
 
 Examples (page frame size, image border size):
-*Same border everywhere (6mm): 3, 3
-*Frameless (with 3mm bleed), no image borders: -3, 0
-*Big frame, thin borders: 10, 1
+* Same border everywhere (6mm): 3, 3
+* Frameless (with 3mm bleed), no image borders: -3, 0
+* Big frame, thin borders: 10, 1
 
 Tip:
 Set the document's margins like page frame size + image border size,
 so you can easily modify the layouts using the margins' and the guides' snapping.
 Example: 
-*Document's margins = 6mm
-*Page frame size = 3mm
-*Image border size = 3mm
+* Document's margins = 6mm
+* Page frame size = 3mm
+* Image border size = 3mm
 
 Default variable fields:
 Using the option 'v' will create 3 text fields left outside the first page.
