@@ -20,6 +20,7 @@ __Usage:__
     This is not needed if only one image is used in the layout.
     Use the page frame size instead.
 
+
 __About image border:__
 
 The image border size adds a border around each image, 
@@ -34,6 +35,7 @@ Examples (page frame size, image border size):
 * Frameless (with 3mm bleed), no image borders: -3, 0
 * Big frame, thin borders: 10, 1
 
+
 __Tip:__
 
 Set the document's margins like page frame size + image border size,
@@ -42,6 +44,7 @@ Example:
 * Document's margins = 6mm
 * Page frame size = 3mm
 * Image border size = 3mm
+
 
 __Default variable fields:__
 
