@@ -49,7 +49,8 @@ Example:
     Image border size = 3mm
 
 Default variable fields:
-Using the option 'v' will create 3 text fields left outside the first page.
+Using the option 'v' will create 3 text fields left outside the first page
+(with the object property print disabled by default).
 Use them to set the default page frame size, the default image border size
 and the default layout style.
 """
@@ -101,20 +102,29 @@ def createDefaultVal():
     if scribus. objectExists("myframe") == False:
         scribus.createText(-70, 10, 40, 10, "myframelabel")
         scribus.setText("Default Frame:", "myframelabel")
+        scribus.setProperty("myframelabel", "m_PrintEnabled", False)
+        
         scribus.createText(-30, 10, 10, 10, "myframe")
         scribus.setText("3", "myframe")
+        scribus.setProperty("myframe", "m_PrintEnabled", False)
         
     if scribus. objectExists("myborder") == False:
         scribus.createText(-70, 30, 40, 10, "myborderlabel")
         scribus.setText("Default Border:", "myborderlabel")
+        scribus.setProperty("myborderlabel", "m_PrintEnabled", False)
+        
         scribus.createText(-30, 30, 10, 10, "myborder")
         scribus.setText("3", "myborder")
+        scribus.setProperty("myborder", "m_PrintEnabled", False)
         
     if scribus. objectExists("mylayout") == False:
         scribus.createText(-70, 50, 40, 10, "mylayoutlabel")
         scribus.setText("Default Layout:", "mylayoutlabel")
+        scribus.setProperty("mylayoutlabel", "m_PrintEnabled", False)
+        
         scribus.createText(-30, 50, 10, 10, "mylayout")
         scribus.setText("h", "mylayout")
+        scribus.setProperty("mylayout", "m_PrintEnabled", False)
 
 
 
@@ -127,6 +137,7 @@ def main(argv):
     #frame = 3
     #border = 3
     
+# layout style
     layout_style = scribus.valueDialog("Layout Style", layout_text, mylayout)
     
     if layout_style == "h":
@@ -136,11 +147,25 @@ def main(argv):
     if layout_style == "v":
         createDefaultVal()
         sys.exit()
+    if layout_style == "":
+        sys.exit()
     
-    frame = float(scribus.valueDialog("Set Page Frame", "Set page frame size ("+unitlabel+") :\n(positiv for page margin,\nnegativ for page bleed)\n", myframe))
+# frame
+    frame_str = scribus.valueDialog("Set Page Frame", "Set page frame size ("+unitlabel+") :\n(positiv for page margin,\nnegativ for page bleed)\n", myframe)
     
+    if frame_str != "":
+        frame = float(frame_str)
+    else:
+        sys.exit()
+    
+    
+# border
     if int(layout_style) > 1:
-        border = float(scribus.valueDialog("Add Image Border", "Add border around images ("+unitlabel+") :\n", myborder))
+        border_str = scribus.valueDialog("Add Image Border", "Add border around images ("+unitlabel+") :\n", myborder)
+        if border_str != "":
+            border = float(border_str)
+        else:
+            sys.exit()
     else:
         border = 0
     
