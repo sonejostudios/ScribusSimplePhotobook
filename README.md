@@ -20,7 +20,7 @@ __Usage:__
     This is not needed if only one image is used in the layout.
     Use the page frame size instead.
 
-About image border:
+__About image border:__
 The image border size adds a border around each image, 
 but not around the page (this is set by the page frame size).
 So the distance between images is twice the border size,
@@ -33,7 +33,7 @@ Examples (page frame size, image border size):
 * Frameless (with 3mm bleed), no image borders: -3, 0
 * Big frame, thin borders: 10, 1
 
-Tip:
+__Tip:__
 Set the document's margins like page frame size + image border size,
 so you can easily modify the layouts using the margins' and the guides' snapping.
 Example: 
@@ -41,7 +41,10 @@ Example:
 * Page frame size = 3mm
 * Image border size = 3mm
 
-Default variable fields:
-Using the option 'v' will create 3 text fields left outside the first page.
+__Default variable fields:__
+Using the option 'v' will create 3 text fields left outside the first page
+(with the object property print disabled by default).
 Use them to set the default page frame size, the default image border size
 and the default layout style.
+
+
