@@ -21,6 +21,7 @@ __Usage:__
     Use the page frame size instead.
 
 __About image border:__
+
 The image border size adds a border around each image, 
 but not around the page (this is set by the page frame size).
 So the distance between images is twice the border size,
@@ -34,6 +35,7 @@ Examples (page frame size, image border size):
 * Big frame, thin borders: 10, 1
 
 __Tip:__
+
 Set the document's margins like page frame size + image border size,
 so you can easily modify the layouts using the margins' and the guides' snapping.
 Example: 
@@ -42,6 +44,7 @@ Example:
 * Image border size = 3mm
 
 __Default variable fields:__
+
 Using the option 'v' will create 3 text fields left outside the first page
 (with the object property print disabled by default).
 Use them to set the default page frame size, the default image border size
