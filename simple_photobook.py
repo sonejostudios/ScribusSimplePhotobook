@@ -151,7 +151,7 @@ def main(argv):
         sys.exit()
     
 # frame
-    frame_str = scribus.valueDialog("Set Page Frame", "Set page frame size ("+unitlabel+") :\n(positiv for page margin,\nnegativ for page bleed)\n", myframe)
+    frame_str = scribus.valueDialog("Set Page Frame", "Set page frame size ("+unitlabel+") :\n(positive for page margin,\nnegative for page bleed)\n", myframe)
     
     if frame_str != "":
         frame = float(frame_str)
