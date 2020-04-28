@@ -8,9 +8,9 @@ This is a bundle of two simple photobook layout generators for scribus.
 ## Description
 There are 2 scripts with different functions.
 
-1. Auto-Photobook: This will create 9x9 and/or a 4x4 layout with guides and optionally fill them with pictures found in a choosen folder. This script is good to automatically create a whole photo book out of an image collection. This will create a new document on each start.
+1. __Auto-Photobook:__ This will create 9x9 and/or a 4x4 layout with guides and optionally fill them with pictures found in a choosen folder. This script is good to automatically create a whole photo book out of an image collection. This will create a new document on each start.
 
-2. Simple-Photobook: This script needs to be started on each page. It generates the choosen layout on the page.
+2. __Simple-Photobook:__ This script needs to be started on each page. It generates the choosen layout on the page.
 
 
 
