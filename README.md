@@ -42,8 +42,9 @@ After this, the last used script can be found in the menu "Scripter/Recent Scrip
 
 3. Define the space between the images (default: 6mm).
 
-4. A. If "9f" or "4f" is in your mode, you can choose an image folder and an image filter will be prompted.
-4. B. Otherwise, set the amount of pages you want to create (default: 10 pages).
+4.
+    If "9f" or "4f" is in your mode, you can choose an image folder and an image filter will be prompted.
+    Otherwise, set the amount of pages you want to create (default: 10 pages).
 
 5. Wait until it is done...
 
