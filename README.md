@@ -5,19 +5,16 @@ This is a bundle of two simple photobook layout generators for scribus.
 ![screenshot](https://raw.githubusercontent.com/sonejostudios/ScribusSimplePhotobook/master/simple_photobook.png "Layout Example")
 
 
-__Description__
+## Description
 There are 2 scripts with different functions.
 
-1. Auto-Photobook
-This will create 9x9 and/or a 4x4 layout with guides and optionally fill them with pictures found in a choosen folder. 
-This script is good to automatically create a whole photo book out of an image collection. This will create a new document on each start.
+1. Auto-Photobook: This will create 9x9 and/or a 4x4 layout with guides and optionally fill them with pictures found in a choosen folder. This script is good to automatically create a whole photo book out of an image collection. This will create a new document on each start.
 
-2. Simple-Photobook
-This script needs to be started on each page. It generates the choosen layout on the page.
+2. Simple-Photobook: This script needs to be started on each page. It generates the choosen layout on the page.
 
 
 
-__Use them in Scribus__
+## Use them in Scribus
 1. Download the scripts to your computer
 2. Start Scribus (you'll need Scribus >= 1.5.5.) 
 3. Go to the menu "Scripter", choose "Execute Script..." and point to the script you want to use.
@@ -27,19 +24,19 @@ After this, the last used script can be found in the menu "Scripter/Recent Scrip
 
 
 
-__Auto-Photobook__
+## Auto-Photobook
 1. Select the process mode:
-    9f = creates a 9x9 layout on each page and fill them with images.
-    4f = creates a 4x4 layout on each page and fill them with images.
+        9f = creates a 9x9 layout on each page and fill them with images.
+        4f = creates a 4x4 layout on each page and fill them with images.
 
-    9e = creates an empty 9x9 layout on each page.
-    4e = creates an empty 4x4 layout on each page.
+        9e = creates an empty 9x9 layout on each page.
+        4e = creates an empty 4x4 layout on each page.
 
-    9f+4f = creates a filled 9x9 layout on odd pages and a filled 4x4 layout on even pages.
-    9e+4e = creates an empty 9x9 layout on odd pages and an empty 4x4 layout on even pages.
+        9f+4f = creates a filled 9x9 layout on odd pages and a filled 4x4 layout on even pages.
+        9e+4e = creates an empty 9x9 layout on odd pages and an empty 4x4 layout on even pages.
 
-    9f+4e = creates a filled 9x9 layout on odd pages and an empty 4x4 layout on even pages (default).
-    9e+4f = creates an empty 9x9 layout on odd pages and a filled 4x4 layout on even pages.
+        9f+4e = creates a filled 9x9 layout on odd pages and an empty 4x4 layout on even pages (default).
+        9e+4f = creates an empty 9x9 layout on odd pages and a filled 4x4 layout on even pages.
 
 2. Select a document layout, the margins (they need to be equal) and the bleed (if needed). Ignore the number of pages.
 
@@ -54,7 +51,8 @@ __Auto-Photobook__
 
 
 
-__Simple-Photobook__
+## Simple-Photobook
+
 __Usage:__
 1. Choose the layout you want to add to the selected page.
 
