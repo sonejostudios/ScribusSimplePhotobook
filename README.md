@@ -16,7 +16,7 @@ There are 2 scripts with different functions.
 
 ## Use them in Scribus
 1. Download the scripts to your computer
-2. Start Scribus (you'll need Scribus >= 1.5.5.) 
+2. Start Scribus (you'll need Scribus >= 1.6.0. If your Scribus version is lower, please use the _python2 scripts) 
 3. Go to the menu "Scripter", choose "Execute Script..." and point to the script you want to use.
 After this, the last used script can be found in the menu "Scripter/Recent Scripts"
 4. Go to the menu "Page" and check "Snap to Guides"
