@@ -6,7 +6,7 @@ import os
 
 try:
     import scribus
-except:
+except ImportError:
     print("This Python script is written for the Scribus scripting interface.")
     print("It can only be run from within Scribus.")
     sys.exit(1)
