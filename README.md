@@ -6,11 +6,13 @@ This is a bundle of two simple photobook layout generators for scribus.
 
 
 ## Description
-There are 2 scripts with different functions.
+There are 3 scripts with different functions.
 
 1. __Auto-Photobook:__ This will create 9x9 and/or a 4x4 layout with guides and optionally fill them with pictures found in a choosen folder. This script is good to automatically create a whole photo book out of an image collection. This will create a new document on each start.
 
-2. __Simple-Photobook:__ This script needs to be started on each page. It generates the choosen layout on the page.
+2. __Auto-Photobook_Fullpage:__ This is a simplified version of Auto-Photobook. It will create one image frame per page and will fill them with pictures found in a choosen folder.
+
+3. __Simple-Photobook:__ This script needs to be started on each page. It generates the choosen layout on the current page.
 
 
 
@@ -47,6 +49,17 @@ After this, the last used script can be found in the menu "Scripter/Recent Scrip
 5. Wait until it is done...
 
 6. Adjust you layouts and move your images as you need.
+
+
+
+## Auto-Photobook-Fullpage
+1. Select a document layout and the bleeds(if needed). Ignore the number of pages.
+
+2. Re-enter the bleeds (needed because it is not possible to get the bleeds from the document properties)
+
+3. Choose a folder with pictures
+
+4. Wait until it is done.
 
 
 
